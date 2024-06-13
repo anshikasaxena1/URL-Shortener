@@ -12,7 +12,9 @@ const handleGenerateNewURL = async (req,res)=>{
         visitHistory: [],
     });
 
-    return res.json({id: shortID});
+    return res.render("home",{
+        id: shortID,
+    });
 }
 // const handleGetAnalytics = async(req,res)=>{
 //     const shortId=req.params.shortId;
